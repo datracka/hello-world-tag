@@ -1,1 +1,1 @@
-console.log("Hello World Tag From Script!");
+console.log("Hello World Tag From Script!!", document.location.href);
