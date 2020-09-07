@@ -1,8 +1,8 @@
 console.log("Hello World Tag From Script!!", document.location.href);
 //* Configurations *//
 
-let UNIQUE_CAMPAIGN = "Rs9ybEZ1fBREfMpkgf7n_";
-let UNIQUE_FORM = "dMBRsz1trbMpx_hxWsp0F";
+let UNIQUE_CAMPAIGN = "zB3cFUUl7vj9BLybZAOQH";
+let UNIQUE_FORM = "sF95edmndPP8niRMu46Th";
 let ENABLE_DEBUGGING = true;
 let CONTAINER_ID = "form-container";
 
