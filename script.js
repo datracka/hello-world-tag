@@ -1,6 +1,6 @@
 // when all scripts are loaded
-function init(uc, uf) {
-  console.log(document.location.href, uc, uf, window);
+function initMobilize(uc, uf) {
+  console.log(document.location.href, uc, uf);
 
   var UNIQUE_CAMPAIGN = uc;
   var UNIQUE_FORM = uf;
@@ -72,3 +72,5 @@ function init(uc, uf) {
     false
   );
 }
+
+initMobilize("zB3cFUUl7vj9BLybZAOQH", "sF95edmndPP8niRMu46Th");
