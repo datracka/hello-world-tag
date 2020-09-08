@@ -1,8 +1,10 @@
 // when all scripts are loaded
 function init() {
-  window.addEventListener("load", () =>  jstag.getid((id) => {
-    console.log(id)
-  });
+  window.addEventListener("load", () =>
+    jstag.getid((id) => {
+      console.log(id);
+    })
+  );
 }
 init();
 
