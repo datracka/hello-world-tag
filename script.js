@@ -1,6 +1,6 @@
 var mobilize = (function (w) {
-  var UNIQUE_CAMPAIGN = uc;
-  var UNIQUE_FORM = uf;
+  var UNIQUE_CAMPAIGN;
+  var UNIQUE_FORM;
   var ENABLE_DEBUGGING = true;
   var CONTAINER_ID = "form-container";
 
