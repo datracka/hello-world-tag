@@ -1,4 +1,4 @@
-function mobilizeInit(uc, uf) {
+function mobilizeInit(w, uc, uf) {
   console.log(document.location.href, uc, uf);
 
   var UNIQUE_CAMPAIGN = uc;
@@ -8,7 +8,7 @@ function mobilizeInit(uc, uf) {
 
   function getUrlVars() {
     var vars = {};
-    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (
+    w.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (
       m,
       key,
       value
@@ -20,14 +20,14 @@ function mobilizeInit(uc, uf) {
 
   function getUrlParam(parameter, defaultvalue) {
     var urlparameter = defaultvalue;
-    if (window.location.href.indexOf(parameter) > -1) {
+    if (w.location.href.indexOf(parameter) > -1) {
       urlparameter = getUrlVars()[parameter];
     }
     return urlparameter;
   }
 
   // when all scripts are loaded
-  window.addEventListener(
+  w.addEventListener(
     "load",
     () => {
       try {
