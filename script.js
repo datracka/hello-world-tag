@@ -1,5 +1,9 @@
 // when all scripts are loaded
-window.addEventListener("load", () => console.log("load!"));
+function init() {
+  window.addEventListener("load", () => console.log("load!"));
+}
+init();
+
 function mobilizeInit(uc, uf) {
   console.log(document.location.href, uc, uf, window);
 
@@ -34,7 +38,6 @@ function mobilizeInit(uc, uf) {
     () => {
       try {
         jstag.getid((id) => {
-          console.log("load2!");
           let numericPartOfUid = id.slice(2);
           let utmTerm = getUrlParam("utm_term", "");
           let utmSource = getUrlParam("utm_source", "");
