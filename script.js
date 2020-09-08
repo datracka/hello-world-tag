@@ -1,5 +1,5 @@
-function mobilizeInit(w, uc, uf) {
-  console.log(document.location.href, uc, uf);
+function mobilizeInit(uc, uf) {
+  console.log(document.location.href, uc, uf, window);
 
   var UNIQUE_CAMPAIGN = uc;
   var UNIQUE_FORM = uf;
@@ -8,7 +8,7 @@ function mobilizeInit(w, uc, uf) {
 
   function getUrlVars() {
     var vars = {};
-    w.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (
+    window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (
       m,
       key,
       value
@@ -20,18 +20,19 @@ function mobilizeInit(w, uc, uf) {
 
   function getUrlParam(parameter, defaultvalue) {
     var urlparameter = defaultvalue;
-    if (w.location.href.indexOf(parameter) > -1) {
+    if (window.location.href.indexOf(parameter) > -1) {
       urlparameter = getUrlVars()[parameter];
     }
     return urlparameter;
   }
 
   // when all scripts are loaded
-  w.addEventListener(
+  window.addEventListener(
     "load",
     () => {
       try {
         jstag.getid((id) => {
+          console.log("id", id);
           let numericPartOfUid = id.slice(2);
           let utmTerm = getUrlParam("utm_term", "");
           let utmSource = getUrlParam("utm_source", "");
