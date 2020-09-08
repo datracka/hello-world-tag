@@ -73,4 +73,4 @@ function initMobilize(uc, uf) {
   );
 }
 
-initMobilize("zB3cFUUl7vj9BLybZAOQH", "sF95edmndPP8niRMu46Th");
+// initMobilize("zB3cFUUl7vj9BLybZAOQH", "sF95edmndPP8niRMu46Th");
