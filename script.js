@@ -1,14 +1,5 @@
 // when all scripts are loaded
-function init() {
-  window.addEventListener("load", () =>
-    jstag.getid((id) => {
-      console.log(id);
-    })
-  );
-}
-init();
-
-function mobilizeInit(uc, uf) {
+function init(uc, uf) {
   console.log(document.location.href, uc, uf, window);
 
   var UNIQUE_CAMPAIGN = uc;
@@ -36,7 +27,6 @@ function mobilizeInit(uc, uf) {
     return urlparameter;
   }
 
-  // when all scripts are loaded
   window.addEventListener(
     "load",
     () => {
@@ -82,3 +72,4 @@ function mobilizeInit(uc, uf) {
     false
   );
 }
+init();
