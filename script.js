@@ -72,4 +72,3 @@ function init(uc, uf) {
     false
   );
 }
-init();
