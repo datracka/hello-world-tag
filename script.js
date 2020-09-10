@@ -68,6 +68,9 @@ var mobilize = (function (w) {
   function init(uc, uf) {
     UNIQUE_CAMPAIGN = uc;
     UNIQUE_FORM = uf;
+    w.addEventListener("load", function () {
+      console.log("called from init");
+    });
   }
   return { init };
 })(window);
